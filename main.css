@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #222;
+
+}
+.header{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+.navbar{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: #0b1e36;
+}
+.logo{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+.logo span{
+    color: yellow;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style-type: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: #2f7d32;
+}
+.nav-buttons{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 13px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.nav-buttons :hover{
+    background-color: #245f27;
+}
+.menu-button{
+    display: none;
+    border: none;
+    background-color: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.hero{
+    min-height: 80px;
+    background-image: linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.48)),
+    url(IMG_20260905_123316.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    
+}
+.hero-content{
+    max-width: 750px;
+}
+.small-title{
+    color: #f4b942;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.hero h1{
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.hero-btn{
+    display: inline-block;
+    background-color: #f4b942;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+}

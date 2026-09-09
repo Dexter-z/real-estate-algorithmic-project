@@ -20,7 +20,7 @@
 
         </ul>
         <a href="#Contact" class="nav-buttons">+2349033927070</a>
-        <button class="menu-button" id="menubutton">=</button>
+        <button class="menu-button" id="menubutton">==</button>
 
     </nav>
 
@@ -38,6 +38,47 @@
             
 
     </section>
+    <div class="search-box">
+        <label>Location</label>
+        <input type="text" placeholder="Enter City or Location">
+
+    <div class="search-item">
+        <label>Property Type</label>
+        <select id="typeinput">
+            <option value="All">All Types</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Villa">Villa</option>
+            <option value="Cottage">Cottage</option>
+
+        </select>
+
+    </div>
+    <div class="search-item">
+        <label>Min Price</label>
+        <select id="minPriceInput">
+            <option value="0">$0</option>
+            <option value="50000">$ 50,000</option>
+            <option value="100000">$ 100,000</option>
+            <option value="200000">$ 200,000</option>
+
+        </select>
+
+    </div>
+    <div class="search-item">
+        <label>Max Price</label>
+        <select id="maxPriceInput">
+            <option value="10000000">$ 10,000,000</option>
+            <option value="5000000">$ 500,000</option>
+            <option value="1000000">$ 1,000,000</option>
+            <option value="2000000">$ 2,000,000</option>
+        </select>
+
+    </div>
+    <button class="search-btn" onclick="filterproperties()">Search</button>
+    <div class="properties-container" id="properties"></div>
+    </div>
+
    </main>
    <script src="script.js"></script>
 </body>

@@ -327,9 +327,15 @@ body{
 
 .properties-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .properties-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .property-card {

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Prime Homes</title>
+    <meta name="description" content="Explore Prime Homes real estate services including sales, property management, investment advisory, property valuation, and leasing.">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Prime <span>Homes</span></a>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#Testimonials">Testimonials</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+            <a href="tel:+2349033927070" class="nav-buttons">+2349033927070</a>
+            <button class="menu-button" id="menubutton" aria-label="Toggle Navigation">==</button>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="small-title">Expert Real Estate Solutions</p>
+            <h1>Comprehensive Services</h1>
+            <p>From luxury property acquisition to portfolio management and architectural advisory, we deliver excellence at every step.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <span>Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container section">
+
+        <!-- Showcase Banner with Photorealistic Image -->
+        <div class="story-grid" style="margin-bottom: 70px;">
+            <div class="story-img-container">
+                <img src="images/service_consult.jpg" alt="Prime Homes Advisory & Consultation Team" loading="lazy">
+            </div>
+            <div class="story-content">
+                <p class="small-title">Tailored Advisory</p>
+                <h2>Strategic Real Estate Guidance Designed Around Your Goals</h2>
+                <p>Whether you are buying your first residence, expanding a commercial portfolio, or liquidating luxury estate assets, Prime Homes brings unmatched market analytics and personalized advisory to ensure optimal returns.</p>
+                <p>Our experienced real estate specialists guide you through valuation, negotiation, compliance, and final deed transfers with complete transparency.</p>
+                <button class="btn-primary" onclick="openModal('serviceModal')">Schedule Advisory Call</button>
+            </div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+            <p class="small-title">What We Offer</p>
+            <h2>Our Core Real Estate Services</h2>
+            <p>End-to-end real estate capabilities tailored for private clients, institutional investors, and property developers.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">🏛️</div>
+                <h3>Property Sales & Buying</h3>
+                <p>Exclusive representation for buyers and sellers of premium residential homes, luxury villas, and high-rise apartments.</p>
+                <ul class="service-list">
+                    <li>Exclusive access to off-market properties</li>
+                    <li>Full contract & escrow management</li>
+                    <li>Targeted digital & global exposure</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Inquire About Sales</button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">🔑</div>
+                <h3>Property Management</h3>
+                <p>Hassle-free oversight, routine maintenance, tenant acquisition, and financial reporting for high-value properties.</p>
+                <ul class="service-list">
+                    <li>Vetted high-quality tenant placement</li>
+                    <li>24/7 facility maintenance handling</li>
+                    <li>Monthly automated yield collection</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Inquire Management</button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Investment Advisory</h3>
+                <p>Data-driven investment strategies, ROI projections, and yield optimization for private equity and estate investors.</p>
+                <ul class="service-list">
+                    <li>Neighborhood growth analysis</li>
+                    <li>Rental yield & capital growth modeling</li>
+                    <li>Risk assessment & tax optimization</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Inquire Advisory</button>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Valuation & Appraisal</h3>
+                <p>Certified property valuation reports based on current market comparables, structural assessments, and zoning insights.</p>
+                <ul class="service-list">
+                    <li>Certified market value assessment</li>
+                    <li>Asset liquidation & tax valuation</li>
+                    <li>Architectural condition audit</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Request Valuation</button>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <div class="service-icon">🏡</div>
+                <h3>Rental & Leasing</h3>
+                <p>Long-term and short-stay luxury rental solutions providing flexible terms for corporate clients and families.</p>
+                <ul class="service-list">
+                    <li>Corporate relocations & leases</li>
+                    <li>Furnished luxury penthouse rentals</li>
+                    <li>Seamless lease agreement drafting</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Inquire Leasing</button>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <div class="service-icon">📐</div>
+                <h3>Architecture & Design</h3>
+                <p>Interior design consultancy, structural renovation oversight, and space planning to maximize property market value.</p>
+                <ul class="service-list">
+                    <li>Custom architectural redesign</li>
+                    <li>High-end luxury staging for resale</li>
+                    <li>Contractor management & inspection</li>
+                </ul>
+                <button class="btn-details" onclick="openModal('serviceModal')">Inquire Design</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- How We Work Process Section -->
+    <section class="section process-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="small-title" style="color: var(--accent-gold);">Our Proven Methodology</p>
+                <h2>How We Deliver Success</h2>
+                <p>A transparent step-by-step approach ensuring speed, security, and maximum value for your real estate journey.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h4>Initial Consultation</h4>
+                    <p>We analyze your goals, timeline, and financial requirements to build a personalized action plan.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h4>Market Valuation & Sourcing</h4>
+                    <p>We conduct in-depth property searches or precise valuations leveraging real-time market metrics.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h4>Strategic Negotiation</h4>
+                    <p>Our veteran negotiators secure optimal terms while protecting your privacy and legal interests.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h4>Closing & Handover</h4>
+                    <p>Final deed execution, funds verification, and smooth keys delivery with ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <div class="container section">
+        <div class="consultation-cta">
+            <div class="cta-text">
+                <h3>Ready to Discuss Your Property Requirements?</h3>
+                <p>Speak with one of our principal real estate advisors today for a confidential consultation.</p>
+            </div>
+            <div style="text-align: right;">
+                <button class="btn-primary" onclick="openModal('serviceModal')">Book Consultation Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Inquiry Modal Overlay -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('serviceModal')">&times;</button>
+            <h3 class="modal-title">Book a Service Consultation</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Fill out the form below and an advisor will contact you within 2 hours.</p>
+            
+            <form onsubmit="handleInquirySubmit(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+234..." required>
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select required>
+                        <option value="Sales">Property Sales & Buying</option>
+                        <option value="Management">Property Management</option>
+                        <option value="Advisory">Investment Advisory</option>
+                        <option value="Valuation">Valuation & Appraisal</option>
+                        <option value="Leasing">Rental & Leasing</option>
+                        <option value="Design">Architecture & Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Brief Message / Property Details</label>
+                    <textarea rows="4" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn-navy" style="width: 100%;">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display:inline-block; margin-bottom:15px;">Prime <span>Homes</span></a>
+                    <p>Connecting clients with exceptional residential and commercial properties in premier destinations.</p>
+                    <p><strong>Phone:</strong> +2349033927070</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Property Sales</a></li>
+                        <li><a href="services.html">Estate Management</a></li>
+                        <li><a href="services.html">Investment Advisory</a></li>
+                        <li><a href="services.html">Market Valuation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Office Address</h4>
+                    <p>Prime Homes HQ, Victoria Island, Lagos, Nigeria.</p>
+                    <p>Email: contact@primehomes.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prime Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.add('active');
+        }
+    </script>
+</body>
+</html>

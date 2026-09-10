@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Prime Homes</title>
+    <meta name="description" content="Explore luxury properties, modern apartments, villas, cottages and family homes available for sale and rent at Prime Homes.">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Prime <span>Homes</span></a>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html" class="active">Properties</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#Testimonials">Testimonials</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+            <a href="tel:+2349033927070" class="nav-buttons">+2349033927070</a>
+            <button class="menu-button" id="menubutton" aria-label="Toggle Navigation">==</button>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="small-title">Exclusive Listings</p>
+            <h1>Find Your Ideal Property</h1>
+            <p>Explore luxury villas, modern high-rise apartments, and cozy cottages across premier locations.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <span>Properties</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Properties Section -->
+    <main class="container section" style="padding-top: 0;">
+        
+        <!-- Filter Bar -->
+        <div class="filter-wrapper">
+            <div class="filter-grid">
+                <div class="filter-item">
+                    <label for="locationInput">Location or Keyword</label>
+                    <input type="text" id="locationInput" placeholder="City e.g. Miami, NY, Austin" onkeyup="filterProperties()">
+                </div>
+
+                <div class="filter-item">
+                    <label for="typeInput">Property Type</label>
+                    <select id="typeInput" onchange="filterProperties()">
+                        <option value="All">All Types</option>
+                        <option value="House">House</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Cottage">Cottage</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="statusInput">Status</label>
+                    <select id="statusInput" onchange="filterProperties()">
+                        <option value="All">All Statuses</option>
+                        <option value="For Sale">For Sale</option>
+                        <option value="For Rent">For Rent</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="minPriceInput">Min Price</label>
+                    <select id="minPriceInput" onchange="filterProperties()">
+                        <option value="0">$0</option>
+                        <option value="500000">$500,000</option>
+                        <option value="1000000">$1,000,000</option>
+                        <option value="2000000">$2,000,000</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="maxPriceInput">Max Price</label>
+                    <select id="maxPriceInput" onchange="filterProperties()">
+                        <option value="100000000">Any Price</option>
+                        <option value="1000000">$1,000,000</option>
+                        <option value="3000000">$3,000,000</option>
+                        <option value="5000000">$5,000,000</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <button class="filter-btn" onclick="filterProperties()">Search Properties</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property Grid Container -->
+        <div class="properties-container" id="properties">
+            <!-- Rendered dynamically by script.js -->
+        </div>
+
+        <!-- Sell/Rent CTA Banner -->
+        <div class="consultation-cta" style="margin-top: 70px;">
+            <div class="cta-text">
+                <h3>Want to Sell or Rent Your Property?</h3>
+                <p>Reach thousands of verified buyers and investors. Get a free professional market valuation today.</p>
+            </div>
+            <div style="text-align: right;">
+                <a href="services.html" class="btn-primary">Request Valuation</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Property Details Modal Overlay -->
+    <div class="modal-overlay" id="propertyModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('propertyModal')">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display:inline-block; margin-bottom:15px;">Prime <span>Homes</span></a>
+                    <p>Connecting clients with exceptional residential and commercial properties in premier destinations.</p>
+                    <p><strong>Phone:</strong> +2349033927070</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Property Types</h4>
+                    <ul class="footer-links">
+                        <li><a href="properties.html">Luxury Villas</a></li>
+                        <li><a href="properties.html">Modern Apartments</a></li>
+                        <li><a href="properties.html">Family Houses</a></li>
+                        <li><a href="properties.html">Country Cottages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Office Address</h4>
+                    <p>Prime Homes HQ, Victoria Island, Lagos, Nigeria.</p>
+                    <p>Email: contact@primehomes.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prime Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

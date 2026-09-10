@@ -1,8 +1,4 @@
-// ==========================================
-// Prime Homes - JavaScript Application Logic
-// ==========================================
 
-// Property Data Repository with photorealistic image assets
 const properties = [
     {
         id: 1,
